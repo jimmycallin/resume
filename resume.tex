@@ -12,6 +12,7 @@
 
 % Start a document with the here given default font size and paper size.
 \documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
 
 % Set the page margins.
 \usepackage[a4paper,margin=0.75in]{geometry}
@@ -41,26 +42,25 @@
 % \href well..
 % \\ breaks the line into a new paragraph
 \noindent\href{mailto:jimmy.callin@gmail.com}{jimmy.callin@gmail.com}\sbull
-\textsmaller{+}46 70 540 45 14
+\textsmaller{+}46 70 540 45 14 \sbull
+\textsmaller{+}1 (669) 264 1677
 \\
-Luthagsesplanaden 87\sbull
-752 71\thinspace {\large}\sbull
-Uppsala\sbull
+Sisjövägen 251\sbull
+436 38\thinspace {\large}\sbull
+Askim\sbull
 Sweden
 
 \spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
 
-\roottitle{Summary}  % a root section title
+%\roottitle{Summary}  % a root section title
 
-\vspace{-1.3em}  % some vertical spacing
+\vspace{-0.4em}  % some vertical spacing
 \begin{multicols}{2}  % open a multicolumn environment
-\noindent \emph{An ambitious and curious student who is currently finishing his Master's degree in Language Technology.}
+\noindent \emph{An ambitious and curious student who just wrapped up his Master's degree in Language Technology and is currently working as a language engineering contractor for Apple in California.}
 \\
-I have since picking up Chinese been having a great interest in language no matter what area. When the academic language studies concluded in Shanghai 2011, I naturally chose to continue within the area of computational linguistics, which has been the main topic of studies for these past four years.
+After concluding my Chinese studies I looked for ways to combine my love for language learning with my interests in computer science, and found a small academic program called language technology. As I started learning about natural language processing, machine learning, and artificial intelligence, so did the world. I am now look for opportunities to apply my skills within these areas in a real-world setting.
 
-I wrote my Bachelor's thesis on using compositions of continuous semantic representations in sentiment classification. This semester I'm working on my Master's thesis in discourse parsing, exploring the effects of various neural network architectures on discourse sense classification.
-
-Please see my Github page for a portfolio of code projects: \href{https://github.com/jimmycallin}{github.com/jimmycallin}
+My \href{http://stp.lingfil.uu.se/exarb/master/callin2017.pdf}{Master's thesis} focused on evaluating various word embeddings and machine learning models for use in shallow discourse parsing. Please see my Github page for a portfolio of code projects: \href{https://github.com/jimmycallin}{github.com/jimmycallin}
 \end{multicols}
 
 
@@ -69,13 +69,21 @@ Please see my Github page for a portfolio of code projects: \href{https://github
 \roottitle{Experience}
 
 \headedsection  % sets the header for the section and includes any subsections
+  {\href{https://apple.com}{Apple Inc.}}
+  {\textsc{Cupertino, California}} {%
+  \headedsubsection
+    {Siri Language Engineer}
+    {Mar. 2016 -- Oct. 2016, May 2017 -- Sept. 2017}
+{\bodytext{I spent six months in in Cupertino and Paris as a Siri Language Engineering Contractor for the Swedish localization team, working on improving the user experience of the Swedish version of Siri through bug fixing and new feature implementation. Despite my limited time I quickly became an integrated part of the team and took on responsibilities usually reserved for full-time employees. After finishing my Master's thesis I returned for another four months of work.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
   {\href{http://gavagai.se}{Gavagai AB}}
   {\textsc{Stockholm, Sweden}} {%
   \headedsubsection
     {Support Manager \& Editor}
     {Jun. 2012 -- Jun. 2015}
-    {\bodytext{Gavagai is a Stockholm start-up specializing in big data text analytics, involving some of Sweden's foremost experts within the area. My day-to-day work
-    concerned being responsible for technical support, where I was an essential part in building a support process which assured that customers' technical inquiry were dealt with in a transparent and efficient manner.
+    {\bodytext{Gavagai is a Stockholm start-up specializing in big data text analytics, involving some of Sweden's foremost experts within the area. My day-to-day work concerned being responsible for technical support, where I was an essential part in building a support process which assured that customers' technical inquiry were dealt with in a transparent and efficient manner.
 
 I curated and constructed targets of interest in various languages and key domains for business intelligence use. I have also developed several internal tools for data analysis, with work in web development, general programming and various natural language processing areas such as automatic sentiment analysis evaluation, Chinese word segmentation, tokenization and transliteration.}}
 }
@@ -91,9 +99,9 @@ I curated and constructed targets of interest in various languages and key domai
   {\href{http://aclweb.org/anthology/W15-2508}{Part-of-Speech Driven Cross-Lingual Pronoun Prediction with Feed-Forward Neural Networks.}}
   {\textsc{}} {%
   \headedsubsection
-    {Proceedings of the Second Workshop on Discourse in Machine Translation (DiscoMT), Stroudsburg, PA: Association for Computational Linguistics, 2015, 59-64}
-    {September 2015}
-    {\bodytext{For some language pairs, pronoun translation is a discourse-driven task which requires information that lies beyond its local context. This motivates the task of predicting the correct pronoun given a source sentence and a target translation, where the translated pronouns have been replaced with placeholders. For cross-lingual pronoun prediction, we suggest a neural network-based model using preceding nouns and determiners as features for suggesting antecedent candidates. Our model scores on par with similar models while having a simpler architecture.}}}
+    {Association for Computational Linguistics}
+    {Sept. 2015}
+    {\bodytext{For some language pairs, pronoun translation is a discourse-driven task which requires information that lies beyond its local context. For cross-lingual pronoun prediction, we suggest a neural network-based model using preceding nouns and determiners as features for suggesting antecedent candidates. Our model scores on par with similar models while having a simpler architecture.}}}
 
 
 \vspace{1em}
@@ -108,14 +116,9 @@ I curated and constructed targets of interest in various languages and key domai
   {\textsc{Uppsala, Sweden}} {%
 
   \headedsubsection
-    {Master's degree in Language Technology}
-    {Aug. 2014 -- Jun. 2016}
-    {\bodytext{Continuing my efforts in natural language processing, this time with a greater focus on research projects.}}
-
-  \headedsubsection
-    {Bachelor's degree in Language Technology}
-    {Aug. 2011 -- Jun. 2014}
-    {\bodytext{Focused on using applied computer science for modeling natural languages. Elective courses were concentrated on mathematics and statistics.}}
+    {Master's and Bachelor's degree in Language Technology}
+    {Aug. 2011 -- Apr. 2017}
+    {\bodytext{Applying linguistics and computer science for computational modeling of natural language. Elective courses were mainly focused on mathematics and statistics. Master's had a greater focus on research projects.}}
 
 }
 
